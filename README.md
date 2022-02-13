@@ -15,6 +15,6 @@ Commands:
     
   /executeplayer: execute commands as player
   
-    alias: /ep,/execp,/fsudo
+    alias: /execp,/fsudo
     usage: /executeplayer <player> <commands>
     
