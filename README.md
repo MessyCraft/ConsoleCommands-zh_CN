@@ -8,13 +8,13 @@ Commands:
     alias: /cc
     usage: /cc version/help/commands
     
-  /ec: execute commands as console
+  /executeconsole: execute commands as console
   
-    alias: /executeconsole,/execc
+    alias: /ec,/execc
     usage: /execc <commands>
     
-  /ep: execute commands as player
+  /executeplayer: execute commands as player
   
-    alias: /executeplayer,/execp
+    alias: /ep,/execp
     usage: /execp <player> <commands>
     
