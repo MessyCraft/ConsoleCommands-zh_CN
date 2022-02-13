@@ -5,7 +5,7 @@ Commands:
 
   /consolecommands: main command
   
-    alias: /cc
+    alias: /cco
     usage: /consolecommands version/help
     
   /executeconsole: execute commands as console
