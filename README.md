@@ -6,15 +6,15 @@ Commands:
   /consolecommands: main command
   
     alias: /cc
-    usage: /cc version/help/commands
+    usage: /consolecommands version/help/commands
     
   /executeconsole: execute commands as console
   
-    alias: /ec,/execc
-    usage: /execc <commands>
+    alias: /execc,/console
+    usage: /executeconsole <commands>
     
   /executeplayer: execute commands as player
   
-    alias: /ep,/execp
-    usage: /execp <player> <commands>
+    alias: /ep,/execp,/fsudo
+    usage: /executeplayer <player> <commands>
     
