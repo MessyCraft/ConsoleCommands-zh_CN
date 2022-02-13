@@ -11,10 +11,10 @@ Commands:
   /ec: execute commands as console
   
     alias: /executeconsole,/execc
-    usage: /execc say 1
+    usage: /execc <commands>
     
   /ep: execute commands as player
   
     alias: /executeplayer,/execp
-    usage: /execp Man297 say hello0w0
+    usage: /execp <player> <commands>
     
