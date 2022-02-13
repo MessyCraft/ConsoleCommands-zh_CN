@@ -1,0 +1,31 @@
+name: ConsoleCommands
+author: [ImCur,Man297]
+description: A minecraft bukkit plugin allows you to execute commands as player or server console.
+main: io.consolecommands.ConsoleCommands
+version: 1.8
+api-version: 1.17
+
+commands:
+  consolecommands:
+    description: Main Command
+    aliases: [cco]
+  executeconsole:
+    description: Execute commands as console
+    aliases: [execc,console]
+  executeplayer:
+    description: Execute commands as player
+    aliases: [execp,fsudo]
+
+permissions:
+  consolecommands.help:
+    description: Open plugin help
+    default: true
+  consolecommands.version:
+    description: Check version information
+    default: true
+  consolecommands.execute.console:
+    description: Allow execute commands as console
+    default: op
+  consolecommands.execute.player:
+    description: Allow execute commands as player
+    default: op
