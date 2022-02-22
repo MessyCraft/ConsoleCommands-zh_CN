@@ -3,18 +3,18 @@ A minecraft bukkit plugin allows you to execute commands as player or server con
 
 Commands:
 
-  /consolecommands: main command
+  `/consolecommands: main command
   
     alias: /cco
-    usage: /consolecommands version/help
+    usage: /consolecommands version/help`
     
-  /executeconsole: execute commands as console
+  `/executeconsole: execute commands as console
   
     alias: /execc,/console
-    usage: /executeconsole <commands>
+    usage: /executeconsole <commands>`
     
-  /executeplayer: execute commands as player
+  `/executeplayer: execute commands as player
   
     alias: /execp,/fsudo
-    usage: /executeplayer <player> <commands>
+    usage: /executeplayer <player> <commands>`
     
