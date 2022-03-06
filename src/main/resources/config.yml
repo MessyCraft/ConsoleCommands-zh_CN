@@ -1,0 +1,7 @@
+# /loopcmd 所能提供的最高循环次数 设为-1表示不限制 留空或设为0表示禁用
+# (某些命令占用巨大,不要过于高估服务器性能)
+times_limit: 100
+
+# 是否允许本插件将luckperms的命令挂载在玩家或控制台上 默认禁止
+# 有可能获得整个BungeeCord群组服的权限 没有BC或没有lp的服务器请忽视
+allow_lp_command: false

@@ -1,11 +1,12 @@
 package io.consolecommands.commands;
 
+import io.consolecommands.ConsoleCommands;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.plugin.Plugin;
 
-import static org.bukkit.Bukkit.getConsoleSender;
-import static org.bukkit.Bukkit.getServer;
+import static org.bukkit.Bukkit.*;
 
 public class executeconsole implements CommandExecutor {
     @Override
@@ -19,11 +20,33 @@ public class executeconsole implements CommandExecutor {
         }
         else {
             if (sender.hasPermission("consolecommands.execute.console")) {
-                if(getServer().dispatchCommand(getConsoleSender(),arg)) {
-                    sender.sendMessage("§eSuccessful executed §6" + arg + " &e as console");
+                Plugin mainclass = ConsoleCommands.getProvidingPlugin(ConsoleCommands.class);
+                if (mainclass.getConfig().getBoolean("allow_lp_command")) {
+                    if (getServer().dispatchCommand(getConsoleSender(), arg)) {
+                        sender.sendMessage("§eSuccessful executed §6" + arg + "§eas console");
+                    } else {
+                        sender.sendMessage("§eCommand §6" + arg + "§enot found");
+                    }
                 }
                 else {
-                    sender.sendMessage("§eCommand§6 " + arg + " &e not found");
+                    Boolean allow = true;
+                    int l = arg.length();
+                    if (l >= 2 && arg.substring(0,2).equals("lp")) allow = false;
+                    if (allow && l >= 9 && arg.substring(0,9).equals("luckperms")) allow = false;
+                    if (allow && l >= 4 && arg.substring(0,4).equals("perm")) allow = false;
+                    if (allow && l >= 5 && arg.substring(0,5).equals("perms")) allow = false;
+                    if (allow && l >= 10 && arg.substring(0,10).equals("permission")) allow = false;
+                    if (allow && l >= 11 && arg.substring(0,11).equals("permissions")) allow = false;
+                    if (allow) {
+                        if (getServer().dispatchCommand(getConsoleSender(), arg)) {
+                            sender.sendMessage("§eSuccessful executed §6" + arg + "§eas console");
+                        } else {
+                            sender.sendMessage("§eCommand §6" + arg + "§enot found");
+                        }
+                    }
+                    else {
+                        sender.sendMessage("§cYou can't use luckperms-command as console!");
+                    }
                 }
             }
             else {

@@ -1,23 +1,22 @@
 # ConsoleCommands
-A minecraft bukkit plugin allows you to execute commands as player or server console.
+######A minecraft bukkit plugin allows you to execute commands as player or server console.
 
-Commands:
+###Commands:
 
-  /consolecommands: main command
-  
-    permission: no required permission
-    alias: /cco
-    usage: /consolecommands version/help
-    
-  /executeconsole: execute commands as console
-    
-    permission: consolecommands.execute.console
+/executeconsole: execute commands as console
+
     alias: /execc,/console
-    usage: /executeconsole <commands>
-    
-  /executeplayer: execute commands as player
-  
-    permission: consolecommands.execute.player
+    usage: /executeconsole <command>
+
+/executeplayer: execute commands as player
+
     alias: /execp,/fsudo
-    usage: /executeplayer <player> <commands>
+    usage: /executeplayer <player> <command>
     
+/loopcmd: loop commands
+
+    usage: /loopcmd <times> <command>
+
+/ccreload: reload config
+
+    usage: /ccreload
