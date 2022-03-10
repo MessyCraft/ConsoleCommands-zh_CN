@@ -19,3 +19,4 @@ times_limit: 100
 # 有可能获得整个 BungeeCord 群组服的权限 没有 Bungeecord 或没有 LuckPerms 的服务器请忽视
 allow_lp_command: false
 
+
