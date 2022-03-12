@@ -4,19 +4,16 @@
 Commands:
 
 /executeconsole: execute commands as console
-
-    alias: /execc,/console
-    usage: /executeconsole <command>
+> usage: /executeconsole <command>
 
 /executeplayer: execute commands as player
-
-    alias: /execp,/fsudo
-    usage: /executeplayer <player> <command>
+> alias: /execp,/fsudo
+> usage: /executeplayer <player> <command>
     
 /loopcmd: loop commands
 
-    usage: /loopcmd <times> <command>
+> usage: /loopcmd <times> <command>
 
 /ccreload: reload config
 
-    usage: /ccreload
+> usage: /ccreload
