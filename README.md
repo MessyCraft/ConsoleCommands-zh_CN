@@ -4,9 +4,11 @@
 Commands:
 
 /executeconsole: execute commands as console
+
     usage: /executeconsole <command>
 
 /executeplayer: execute commands as player
+
     alias: /execp,/fsudo
     Usage: /executeplayer <player> <command>
     
