@@ -30,7 +30,7 @@ permissions:
     default: op
   consolecommands.execute.console:
     description: Allow execute commands as console
-    default: op
+    default: false
   consolecommands.execute.player:
     description: Allow execute commands as player
     default: op
