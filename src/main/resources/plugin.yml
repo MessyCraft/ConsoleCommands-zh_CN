@@ -37,3 +37,4 @@ permissions:
   consolecommands.reload:
     description: Allow reload config.yml
     default: op
+
