@@ -26,15 +26,15 @@ permissions:
     description: Check version information
     default: true
   consolecommands.loopcmd:
-    description: Allow loop commands
+    description: Allow to loop commands
     default: op
   consolecommands.execute.console:
-    description: Allow execute commands as console
+    description: Allow to execute commands as console
     default: op
   consolecommands.execute.player:
-    description: Allow execute commands as player
+    description: Allow to execute commands as player
     default: op
   consolecommands.reload:
-    description: Allow reload config.yml
+    description: Allow to reload config.yml
     default: op
 
