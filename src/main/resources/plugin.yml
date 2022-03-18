@@ -3,7 +3,7 @@ author: [ImCur,Man297]
 description: A minecraft bukkit plugin allows you to execute commands as player or server console.
 main: io.consolecommands.ConsoleCommands
 version: 1.8
-api-version: 1.17
+api-version: 1.13
 
 commands:
   executeconsole:
