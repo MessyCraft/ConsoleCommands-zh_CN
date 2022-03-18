@@ -1,5 +1,8 @@
-# ConsoleCommands
-### A minecraft bukkit plugin allows you to execute commands as player or server console.
+<div align=middle>
+    <h1>ConsoleCommands</h1>
+
+<h3>A minecraft bukkit plugin allows you to execute commands as player or server console.</h3>
+</div>
 
 Commands:
 
