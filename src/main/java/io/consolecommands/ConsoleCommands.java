@@ -12,7 +12,7 @@ public final class ConsoleCommands extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        System.out.println("Consolecommands loaded.");
+        System.out.println("Plugin has been loaded.");
         saveDefaultConfig();
         reloadConfig();
         getCommand("executeconsole").setExecutor(new executeconsole());
@@ -21,13 +21,13 @@ public final class ConsoleCommands extends JavaPlugin {
         getCommand("loopcmd").setExecutor(new loopcmd());
         getCommand("loopcmd").setTabCompleter(new loopcmd());
         getCommand("ccreload").setExecutor(new ccreload());
-        int pluginId = Integer.parseInt("14662");
-        Metrics metrics = new Metrics(this, pluginId);
+        
+        Metrics metrics = new Metrics(this, 14662);
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
-        System.out.println("Consolecommands unloaded.");
+        System.out.println("Plugin has been unloaded.");
     }
 }
