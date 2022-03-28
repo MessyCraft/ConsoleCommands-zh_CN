@@ -21,16 +21,17 @@ public class loopcmd implements CommandExecutor, TabExecutor {
             arg = arg + args[i] + " ";
         }
 
-        // 防崩服 差点把我害死了..
+        // Anti-crash
         List<String> noloop = new ArrayList<>();
         for (int i=0;i<9;i++) {
             noloop.add("loopcmd " + i);
         }
         if (containsIgnoreCase(arg, noloop)) {
-            sender.sendMessage("§e§l[FBI WARNING] §c嗯?小伙子不错呐 想崩服呢?(服主表示很淦**)");
-            sender.sendMessage("§e§l[FBI WARNING] §cDon't loop command \"/loopcmd\", for the server.");
+            sender.sendMessage("&cDon't use /loopcmd to execute /loopcmd!");
             return false;
         }
+
+        // Loop commands
 
         if (args.length < 2) {
             sender.sendMessage("§eUsage: §6/loopcmd <looptimes> <command>");
@@ -62,16 +63,18 @@ public class loopcmd implements CommandExecutor, TabExecutor {
                 }
                 else {
                     sender.sendMessage("§eUsage: §6/loopcmd <looptimes> <command>");
-                    sender.sendMessage("§c<looptimes> 需要填写一个正整数！");
+                    sender.sendMessage("§c<looptimes> Required a integer! ");
                 }
             }
             else {
                 sender.sendMessage("§eUsage: §6/loopcmd <looptimes> <command>");
-                sender.sendMessage("§c<looptimes> 需要填写一个正整数！");
+                sender.sendMessage("§c<looptimes> Requires a integer! ");
             }
         }
         return false;
     }
+
+    // Tab complete
 
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String s, String[] args) {

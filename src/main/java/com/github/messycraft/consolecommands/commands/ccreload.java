@@ -11,7 +11,7 @@ public class ccreload implements CommandExecutor {
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         Plugin mainclass = ConsoleCommands.getProvidingPlugin(ConsoleCommands.class);
         mainclass.reloadConfig();
-        commandSender.sendMessage("§e§l[ConsoleCommand] §6Config has been reloaded");
+        commandSender.sendMessage("§6ConsoleCommands config reloaded successful. ");
         return false;
     }
 }

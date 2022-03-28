@@ -19,14 +19,12 @@ times_limit: 100
 # 有可能获得整个 BungeeCord 群组服的权限, 没有 Bungeecord 或没有 LuckPerms 的服务器请忽视
 allow_lp_command: false
 
-# List of commands that cannot be executed on the server console with this plugin command
-# 禁止用本插件命令在服务器控制台执行的命令列表
+# List of commands that cannot be executed on the server console
+# 禁止在服务器控制台执行的命令列表
 bannedcmd_asconsole:
-  - commandA
-  - commandB
+  - ExampleDangerousCommand
 
-# List of commands that cannot be executed on the server console with this plugin command
-# 禁止用本插件命令在服务器控制台执行的命令列表
+# List of commands that cannot be executed on the player
+# 禁止在服务器玩家执行的命令列表
 bannedcmd_asplayer:
-  - commandC
-  - commandD
+  - ExampleDangerousCommand
