@@ -2,7 +2,7 @@ name: ConsoleCommands
 authors: [ ImCur_ , Man297 ]
 description: A minecraft bukkit plugin allows you to execute commands as player or server console.
 main: com.github.messycraft.consolecommands.ConsoleCommands
-version: 1.9
+version: 1.2
 softdepend: [ LuckPerms ]
 api-version: 1.13
 
