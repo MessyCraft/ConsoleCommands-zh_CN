@@ -21,7 +21,7 @@ jobs:
       uses: actions/upload-artifact@v3.0.0
       with: 
         name: ConsoleCommands Artifact
-        path: ./target/consolecommands-1.0-SNAPSHOT.jar
+        path: ./target/ConsoleCommands-Build.jar
         if-no-files-found: warn
         retention-days: 90
       
