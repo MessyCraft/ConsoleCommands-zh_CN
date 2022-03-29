@@ -23,5 +23,5 @@ jobs:
         name: ConsoleCommands Artifact
         path: ./target/consolecommands-1.0-SNAPSHOT.jar
         if-no-files-found: warn
-        retention-days: 365
+        retention-days: 90
       
