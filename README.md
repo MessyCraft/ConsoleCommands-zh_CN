@@ -1,6 +1,6 @@
 <div align=middle>
     <h1>ConsoleCommands</h1>
-
+    [![Maven Build Status](https://github.com/MessyCraft/ConsoleCommands/actions/workflows/maven.yml/badge.svg)](https://github.com/MessyCraft/ConsoleCommands/actions/workflows/maven.yml)
 <h3>A minecraft bukkit plugin allows you to execute commands as player or server console.</h3>
 </div>
 
