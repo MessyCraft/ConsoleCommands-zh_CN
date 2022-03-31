@@ -1,15 +1,15 @@
 <div align=middle>
-    <h1>ConsoleCommands</h1>
-<h3>A minecraft bukkit plugin allows you to execute commands as player or server console.</h3>
+    <h1>ConsoleCommands 汉化版</h1>
+<h3>一个允许你以玩家或者服务器控制台身份执行命令的 Bukkit 插件。</h3>
 </div>
 
-[![Maven Build](https://github.com/MessyCraft/ConsoleCommands/actions/workflows/maven.yml/badge.svg)](https://github.com/MessyCraft/ConsoleCommands/actions/workflows/maven.yml) 
+[![Maven Build](https://github.com/MessyCraft/ConsoleCommands-zh_CN/actions/workflows/maven.yml/badge.svg)](https://github.com/MessyCraft/ConsoleCommands-zh_CN/actions/workflows/maven.yml) 
 
-Commands:
+命令:
 
-/executeconsole: execute commands as console
+/executeconsole: 以控制台身份执行命令
 
-    usage: /executeconsole <command>
+    用法: /executeconsole <command>
 
 /executeplayer: execute commands as player
 
