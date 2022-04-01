@@ -7,7 +7,7 @@
 
 命令:
 
-/executeconsole: 以控制台身份执行命令
+/executeconsole: 以控制台身份执行命令或发送消息
 
     用法: /executeconsole <command>
 
