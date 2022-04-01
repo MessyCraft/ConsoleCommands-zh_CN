@@ -19,7 +19,7 @@ public class executeconsole implements CommandExecutor {
             arg = arg + s + " ";
         }
         if (args.length == 0) {
-            sender.sendMessage("§eUsage: §6/executeconsole <commands>");
+            sender.sendMessage("§e用法: §6/executeconsole <命令>");
         }
         else {
             if (sender.hasPermission("consolecommands.execute.console")) {
@@ -39,12 +39,12 @@ public class executeconsole implements CommandExecutor {
                         cmdBannedC(arg, sender);
                     }
                     else {
-                        sender.sendMessage("§cYou can't use luckperms-command as console!");
+                        sender.sendMessage("§c您不能以控制台身份使用 LuckPerms 的命令! ");
                     }
                 }
             }
             else {
-                sender.sendMessage("§cYou don't have permission");
+                sender.sendMessage("§c您没有权限");
             }
         }
         return false;
@@ -62,13 +62,13 @@ public class executeconsole implements CommandExecutor {
         }
         if (!banned) {
             if (getServer().dispatchCommand(getConsoleSender(), cmd)) {
-                sender.sendMessage("§eSuccessful executed §6" + cmd + "§eas console");
+                sender.sendMessage("§e成功以控制台身份执行 §6" + cmd);
             } else {
-                sender.sendMessage("§eCommand §6" + cmd + "§enot found");
+                sender.sendMessage("§e未找到命令 §6" + cmd);
             }
         }
         else {
-            sender.sendMessage("§cYou can't execute the command as console.");
+            sender.sendMessage("§c您不能以控制台身份执行这个命令! ");
         }
     }
 }

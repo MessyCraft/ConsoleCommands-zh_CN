@@ -27,14 +27,14 @@ public class loopcmd implements CommandExecutor, TabExecutor {
             noloop.add("loopcmd " + i);
         }
         if (containsIgnoreCase(arg, noloop)) {
-            sender.sendMessage("&cDon't use /loopcmd to execute /loopcmd!");
+            sender.sendMessage("&c不要使用 /loopcmd 循环执行 /loopcmd! ");
             return false;
         }
 
         // Loop commands
 
         if (args.length < 2) {
-            sender.sendMessage("§eUsage: §6/loopcmd <looptimes> <command>");
+            sender.sendMessage("§e用法: §6/loopcmd <循环次数> <命令>");
         }
         else {
             Pattern pattern = Pattern.compile("^[-\\+]?[\\d]*$");
@@ -48,27 +48,27 @@ public class loopcmd implements CommandExecutor, TabExecutor {
                                 for (int i = 1; i < looptimes; i++) {
                                     getServer().dispatchCommand(sender, arg);
                                 }
-                                sender.sendMessage("§eCommand §6" + arg + "§ecycles §b" + looptimes + " §etimes");
+                                sender.sendMessage("§e已循环执行 §6" + arg + "§e §b" + looptimes + " §e次");
                             } else {
-                                sender.sendMessage("§eCommand §6" + arg + "§enot found");
+                                sender.sendMessage("§e未找到命令 §6" + arg);
                             }
                         }
                         else {
-                            sender.sendMessage("§4[ERROR] §eloopcmd times limit: §6" + mainclass.getConfig().getInt("times_limit")
-                                    + "§e. §cYou can't cycle the command §6" + looptimes + " §ctimes.");
+                            sender.sendMessage("§4[错误] §eloopcmd 执行次数限制为 §6" + mainclass.getConfig().getInt("times_limit")
+                                    + "§e次。 §c您不能执行这个命令 §6" + looptimes + " §c次。");
                         }
                     } else {
-                        sender.sendMessage("§cYou don't have permission");
+                        sender.sendMessage("§c您没有权限");
                     }
                 }
                 else {
-                    sender.sendMessage("§eUsage: §6/loopcmd <looptimes> <command>");
-                    sender.sendMessage("§c<looptimes> Required a integer! ");
+                    sender.sendMessage("§e用法: §6/loopcmd <次数> <命令>");
+                    sender.sendMessage("§c<次数> 必须是一个整数! ");
                 }
             }
             else {
-                sender.sendMessage("§eUsage: §6/loopcmd <looptimes> <command>");
-                sender.sendMessage("§c<looptimes> Requires a integer! ");
+                sender.sendMessage("§e用法: §6/loopcmd <次数> <命令>");
+                sender.sendMessage("§c<次数> 必须是一个整数! ");
             }
         }
         return false;

@@ -11,7 +11,7 @@ public final class ConsoleCommands extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        getLogger().info("Plugin has been loaded.");
+        getLogger().info("插件已成功加载。");
         saveDefaultConfig();
         reloadConfig();
         getCommand("executeconsole").setExecutor(new executeconsole());
@@ -27,6 +27,6 @@ public final class ConsoleCommands extends JavaPlugin {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
-        getLogger().info("Plugin has been unloaded.");
+        getLogger().info("插件已成功卸载。");
     }
 }
