@@ -48,7 +48,7 @@ public class loopcmd implements CommandExecutor, TabExecutor {
                                 for (int i = 1; i < looptimes; i++) {
                                     getServer().dispatchCommand(sender, arg);
                                 }
-                                sender.sendMessage("§e已循环执行 §6" + arg + "§e §b" + looptimes + " §e次");
+                                sender.sendMessage("§e已循环执行 §6" + arg + "§e§b" + looptimes + " §e次");
                             } else {
                                 sender.sendMessage("§e未找到命令 §6" + arg);
                             }
