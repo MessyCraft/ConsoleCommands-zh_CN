@@ -3,7 +3,7 @@
 <h3>一个允许你以玩家或者服务器控制台身份执行命令的 Bukkit 插件。</h3>
 </div>
 
-[![Maven Build](https://github.com/MessyCraft/ConsoleCommands-zh_CN/actions/workflows/maven.yml/badge.svg)](https://github.com/MessyCraft/ConsoleCommands-zh_CN/actions/workflows/maven.yml) 
+[![Maven 构建状态](https://github.com/MessyCraft/ConsoleCommands-zh_CN/actions/workflows/maven.yml/badge.svg)](https://github.com/MessyCraft/ConsoleCommands-zh_CN/actions/workflows/maven.yml) 
 
 命令:
 
@@ -11,15 +11,15 @@
 
     用法: /executeconsole <command>
 
-/executeplayer: execute commands as player
+/executeplayer: 以玩家身份执行命令
 
-    alias: /execp,/fsudo
-    Usage: /executeplayer <player> <command>
+    别名: /execp,/fsudo
+    用法: /executeplayer <玩家> c:<消息>/<命令>
     
-/loopcmd: loop commands
+/loopcmd: 循环执行命令
 
-    usage: /loopcmd <times> <command>
+    用法: /loopcmd <次数> <命令>
 
-/ccreload: reload config
+/ccreload: 重载配置
     
-    usage: /ccreload
+    用法: /ccreload
