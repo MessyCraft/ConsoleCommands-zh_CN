@@ -1,4 +1,4 @@
-name: Maven 构建
+name: Maven Build
 on:
   push:
     branches: [ main ]
