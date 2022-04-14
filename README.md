@@ -3,6 +3,8 @@
 <h3>一个允许你以玩家或者服务器控制台身份执行命令的 Bukkit 插件。</h3>
 </div>
 
+英文版 ConsoleCommands: [English edition of ConsoleCommands](https://github.com/MessyCraft/ConsoleCommands)
+
 [![Maven 构建状态](https://github.com/MessyCraft/ConsoleCommands-zh_CN/actions/workflows/maven.yml/badge.svg)](https://github.com/MessyCraft/ConsoleCommands-zh_CN/actions/workflows/maven.yml) 
 
 命令:
