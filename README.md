@@ -1,12 +1,17 @@
-<div align=middle>
-    <h1>ConsoleCommands 汉化版</h1>
-    <h3>一个允许你以玩家或者服务器控制台身份执行命令的 Bukkit 插件。</h3>
-    <a href="https://github.com/MessyCraft/ConsoleCommands/actions/workflows/maven.yml">
-        <img alt="Maven Build" src="https://github.com/MessyCraft/ConsoleCommands/actions/workflows/maven.yml/badge.svg"/>
-    </a>
-</div>
+# ConsoleCommands
+### 一个允许你以玩家或服务器控制台身份执行命令的 Bukkit 插件。
 
-[English edition of ConsoleCommands](https://github.com/MessyCraft/ConsoleCommands) | **中文版 ConsoleCommands**
+- [x] 兼容 Bukkit / Spigot
+- [ ] 兼容 BungeeCord  
+
+---
+
+<a href="https://github.com/MessyCraft/ConsoleCommands/actions/workflows/maven.yml">
+    <img alt="Maven Build" src="https://github.com/MessyCraft/ConsoleCommands/actions/workflows/maven.yml/badge.svg"/>
+</a>
+
+[English version of ConsoleCommands](https://github.com/MessyCraft/ConsoleCommands/) | **中文版 ConsoleCommands**
+
 
 命令:
 
