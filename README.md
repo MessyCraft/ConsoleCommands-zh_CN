@@ -2,7 +2,7 @@
 ### 一个允许你以玩家或服务器控制台身份执行命令的 Bukkit 插件。
 
 - [x] 兼容 Bukkit / Spigot
-- [ ] 兼容 BungeeCord  
+- [ ] 兼容 BungeeCord
 
 ---
 
@@ -12,6 +12,7 @@
 
 [English version of ConsoleCommands](https://github.com/MessyCraft/ConsoleCommands/) | **中文版 ConsoleCommands**
 
+---
 
 命令:
 
